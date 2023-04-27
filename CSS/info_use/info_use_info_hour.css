@@ -1,0 +1,43 @@
+#hour_contents {
+   padding: 30px;
+   text-align: center;
+}
+#hour_contents > span {
+   color: green;
+   font-size: 1.5em;
+   font-weight: bold;
+   display: block;
+   margin-bottom: 10px;
+   text-align: left;
+}
+#hour_select {
+   margin: 20px;
+   width: 250px;
+   height: 50px;
+   font-size: 1.5em;
+   text-align: center;
+   display: inline-block;
+}
+#hour_select option:first-child{
+   display: none;
+}
+#hour_contents button {
+   width: 100px;
+   height: 50px;
+   font-size: 1.2em;
+   display: inline-block;
+   border-radius: 10px;
+   color: #fff;
+   background-color: rgb(0, 52, 77);
+   padding: 5px;
+}
+#station_clickable img {
+   margin: 0 -3px;
+   display: inline-block;
+}
+#station_clickable img[src="../images/info_use/greencircle.png"] {
+   z-index: 5;
+}
+#station_clickable img[src="../images/info_use/brownbar.png"] {
+   z-index: 4;
+}

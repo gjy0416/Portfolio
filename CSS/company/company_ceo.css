@@ -1,0 +1,28 @@
+#content_company {
+   padding: 30px;
+   width: 100%;
+}
+#content_company img {
+   display: block;
+   width: 100%;
+   margin-top: 50px;
+}
+#content_company p {
+   line-height: 2em;
+   font-size: 1.1em;
+}
+.green_accent {
+   color: green;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+#greeting {
+   color: #333;
+   font-size: 1.4em;
+}
+#content_company h3 {
+   color: rgb(0, 55, 72);
+   font-size: 1.5em;
+   display: inline-block;
+   margin-top: 10px;
+}

@@ -1,0 +1,86 @@
+#info_contents {
+   margin: 10px 10px;
+   height: 100%;
+   width: 100%;
+}
+#info_contents hr {
+   margin: 0 5px;
+   border: 2px solid green;
+   background-color: green;
+}
+.explain {
+   width: 550px;
+   font-size: 0.8em;
+   float: left;
+   line-height: 1.5em;
+}
+.each_head {
+   display: block;
+   font-size: 1.5em;
+   font-weight: bold;
+   margin-bottom: 15px;
+   margin-top: 20px;
+}
+.contents_ul {
+   font-size: 0.8em;
+   margin-top: 20px;
+   margin-left: 20px;
+   float: left;
+}
+.contents_li {
+   list-style: disc;
+   line-height: 2em;
+   margin-left: 20px;
+}
+#oneway {
+   padding: 15px 0;
+   height: 210px;
+}
+#oneway > img {
+   display: block;
+   float: right;
+   width: 400px;
+}
+#prepayment {
+   padding: 15px 0;
+   height: 240px;
+}
+#prepayment > img {
+   display: block;
+   float: right;
+   width: 350px;
+}
+#deferred_payment {
+   padding: 15px 0;
+   height: 220px;
+}
+#deferred_payment > img {
+   display: block;
+   float: right;
+   width: 250px;
+   margin-right: 50px;
+}
+#prefer {
+   padding: 15px 0;
+   height: 220px;
+}
+#prefer img {
+   display: block;
+   float: right;
+   width: 250px;
+   margin-right: 50px;
+}
+#group {
+   padding: 15px 0;
+   height: 100px;
+}
+#regular {
+   padding: 15px 0;
+   height: 220px;
+}
+#regular > img {
+   display: block;
+   float: right;
+   width: 250px;
+   margin-right: 50px;
+}

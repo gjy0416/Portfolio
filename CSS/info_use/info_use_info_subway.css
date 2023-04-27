@@ -1,0 +1,158 @@
+#subway, #vehicle, #propel {
+   display: none;
+}
+#label_subway, #label_vehicle, #label_propel {
+   border: 1px solid rgba(0, 52, 77, 0.5);
+   width: 100%;
+   height: 50px;
+   padding: 10px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+#label_subway, #label_vehicle  {
+   margin-right: 10px;
+}
+#subway:checked ~ #subway_exp {
+   display: block;
+}
+#subway:checked ~ #vehicle_exp, #subway:checked ~ #propel_exp {
+   display: none;
+}
+#subway:checked ~ #label_wrap > #label_subway {
+   color: rgb(0, 52, 77);
+}
+#subway:checked ~ #label_wrap > #label_vehicle, #subway:checked ~ #label_wrap > #label_propel {
+   color: rgba(51, 51, 51, 0.5);
+}
+#vehicle:checked ~ #vehicle_exp {
+   display: block;
+}
+#vehicle:checked ~ #subway_exp, #vehicle:checked ~ #propel_exp {
+   display: none;
+}
+#vehicle:checked ~ #label_wrap > #label_vehicle {
+   color: rgb(0, 52, 77);
+}
+#vehicle:checked ~ #label_wrap > #label_subway, #vehicle:checked ~ #label_wrap > #label_propel {
+   color: rgba(51, 51, 51, 0.5);
+}
+#propel:checked ~ #propel_exp {
+   display: block;
+}
+#propel:checked ~ #subway_exp, #propel:checked ~ #vehicle_exp {
+   display: none;
+}
+#propel:checked ~ #label_wrap > #label_propel {
+   color: rgb(0, 52, 77);
+}
+#propel:checked ~ #label_wrap > #label_subway, #propel:checked ~ #label_wrap > #label_vehicle {
+   color: rgba(51, 51, 51, 0.5);
+}
+#content_subway {
+   width: 100%;
+   position: relative;
+}
+#label_wrap {
+   width: 100%;
+   display: flex;
+   margin-top: 50px;
+   margin-bottom: 20px
+}
+#subway_exp, #vehicle_exp, #propel_exp {
+   width: 100%;
+   padding: 30px;
+   position: relative;
+}
+#subway_exp > h2, #vehicle_exp > h2, #propel_exp > h2 {
+   color: green;
+   font-size: 1.8em;
+}
+#subway_exp > p, #vehicle_exp > p, #propel_exp > p  {
+   padding: 20px;
+   margin: 10px;
+   font-size: 0.9em;
+   line-height: 1.5em;
+}
+#subway_exp_content ul {
+   padding-left: 20px;
+}
+#subway_exp_content img {
+   margin: 0 auto;
+   display: block;
+}
+#subway_exp_content li {
+   font-size: 1.2em;
+   list-style: square;
+   line-height: 2em;
+   font-weight: bold;
+   color: orangered;
+   margin: 15px;
+}
+#subway_exp_content hr {
+   border: 1px solid rgba(51, 51, 51, 0.5);
+   /* background-color: green; */
+   margin: 40px 0;
+}
+#vehicle_exp img {
+   margin: 30px auto 0 auto;
+   display: block;
+}
+#vehicle_exp ul {
+   margin: 0 auto;
+   padding-left: 30px;
+}
+#vehicle_exp li {
+   font-size: 1.2em;
+   list-style: square;
+   line-height: 2em;
+   font-weight: bold;
+   color: orangered;
+}
+#vehicle_exp table {
+   border-collapse: collapse;
+   margin: 20px 0;
+}
+#vehicle_exp th, #vehicle_exp td {
+   border: 1px solid rgba(51, 51, 51, 0.5);
+   padding: 5px 10px;
+}
+#vehicle_exp th {
+   width: 200px;
+   height: 70px;
+   text-align: center;
+}
+#vehicle_exp td {
+   width: 750px;
+   line-height: 1.5em;
+}
+#propel_exp h4 {
+   margin: 10px 0;
+}
+#propel_exp > ul {
+   padding-left: 30px;
+   margin-top: 30px;
+}
+#propel_exp > ul >li {
+   font-size: 1.2em;
+   list-style: square;
+   line-height: 2em;
+   font-weight: bold;
+   color: orangered;
+}
+#propel_exp > ul > ul >li {
+   line-height: 1.5em;
+   color: #333;
+}
+#propel_exp ul > ul > img:first-of-type {
+   margin: 40px auto;
+   width: 110%;
+   display: block;
+}
+#propel_exp ul > ul > img:last-of-type {
+   margin: 40px auto;
+   width: 100%;
+   display: block;
+}

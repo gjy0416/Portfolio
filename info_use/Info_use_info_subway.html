@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../CSS/info_use/Info_use_base.css">
+   <link rel="stylesheet" href="../CSS/info_use/info_use_info_subway.css">
+   <title>용인경량전철</title>
+</head>
+<body>
+   <header>
+      <div id="header_wrap">
+         <div id="logo"><a href="../index.html"><img src="../images/logo.png" alt="로고"></a></div>
+         <div id="navi">
+            <ul>
+               <li class="s_menu_parent">
+                  <a id="use_menu" class="selected_menu" href="info_use_info_map.html">이용안내</a>
+                  <ul class="s_menu" id="s_menu_use">
+                     <li><a href="Info_use_info_map.html">경전철 이용정보</a></li>
+                     <li><a href="Info_use_info_stationinfo.html">역 정보</a></li>
+                     <li><a href="Info_use_info_facility.html">편의시설 정보</a></li>
+                     <li><a href="Info_use_info_subway.html">경전철 소개</a></li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="notice_menu" href="../notice/notice_notice.html">알림마당</a>
+                  <ul class="s_menu" id="s_menu_notice">
+                     <li><a href="../notice/notice_notice.html">공지사항</a></li>
+                     <li>입찰정보</li>
+                     <li>채용정보</li>
+                     <li>홍보자료</li>
+                     <li>추천맛집</li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="customer_menu" href="../customer/customer_customer.html">고객마당</a>
+                  <ul class="s_menu" id="s_menu_customer">
+                     <li><a href="../customer/customer_customer.html">고객의 소리</a></li>
+                     <li><a href="../customer/customer_lostitem.html">유실물 센터</a></li>
+                     <li>지연증명서 발급</li>
+                     <li>고객 서비스 현장</li>
+                     <li>광고문의</li>
+                     <li>안전신문고</li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="safety_menu" href="../safety/safety_management.html">안전환경</a>
+                  <ul class="s_menu" id="s_menu_safety">
+                     <li><a href="../safety/safety_management.html">안전경영</a></li>
+                     <li>안전가이드</li>
+                     <li>안전시설</li>
+                     <li>안전시스템 소개</li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="company_menu" href="../company/company_ceo.html">회사소개</a>
+                  <ul class="s_menu" id="s_menu_company">
+                     <li><a href="../company/company_ceo.html">CEO 인사말</a></li>
+                     <li>ESG 경영 소개</li>
+                     <li>조직도</li>
+                     <li>CI/BI 소개</li>
+                     <li>주요 연혁</li>
+                     <li>운영사 소개</li>
+                     <li>찾아오시는길</li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div id="min_menu">
+            <div id="search"><img onclick="search_text()" src="../images/search.png" alt="검색"></div>
+            <img class="m_menu_bar" src="../images/navbar.png">
+            <div id="login"><a href="../login.html"><img src="../images/login.png" alt="로그인"></a></div>
+            <img class="m_menu_bar" src="../images/navbar.png">
+            <div id="lang"><a href="#"><img src="../images/lang.png" alt="언어변경"></a></div>
+            <img class="m_menu_bar" src="../images/navbar.png">
+            <div id="sitemap"><a href="#"><img src="../images/sitemap.png" alt="언어변경"></a></div>
+         </div>
+         <div class="clear"></div>
+      </div>
+   </header>
+   <div id="search_wrap">
+      <div id="search_text">
+         <input type="text" placeholder="검색">
+         <button type="button">검색</button>
+      </div>
+   </div>
+   <script src="../JS/seach_onoff.js"></script>
+   <div id="header2">
+      <div id="side_menu_h"><span>이용안내</span></div>
+   </div>
+   <div id="container">
+      <div id="content">
+         <div id="side_bar">
+            <ul>
+               <li>
+                  <a>경전철 이용정보</a>
+                  <input id="list_unfold" type="checkbox">
+                  <label id="foldable_label" for="list_unfold"><img id="foldable_change_img" src="../images/info_use/unfold_icon_down.png"></label>
+                  <ul>
+                     <li><a href="info_use_info_map.html">노선 안내</a></li>
+                     <li><a href="info_use_info_ticket.html">승차권 구입</a></li>
+                     <li><a href="info_use_info_fareguide.html">운임안내</a></li>
+                  </ul>
+               </li>
+               <!-- <li><a href="Info_use_info_hour.html">운행시간</a></li> -->
+               <li><a href="Info_use_info_stationinfo.html">역 정보</a></li>
+               <li><a href="Info_use_info_facility.html">편의시설 정보</a></li>
+               <li class="selected_sidemenu"><a class="selected_sidemenu" href="Info_use_info_subway.html">경전철 소개</a></li>
+            </ul>
+         </div>
+         <script src="../JS/info_use/foldablelabel_onoff.js"></script>
+         <div id="info">
+            <span id="info_header">경전철 소개</span>
+            <div class="info_hr"></div>
+            <div id="content_subway">
+               <input id="subway" type="radio" name="subway_tab" checked>
+               <input id="vehicle" type="radio" name="subway_tab">
+               <input id="propel" type="radio" name="subway_tab">
+               <div id="label_wrap">
+                  <label id="label_subway" for="subway" name="subway_tab_label">경전철이란?</label>
+                  <label id="label_vehicle" for="vehicle" name="subway_tab_label">차량 소개</label>
+                  <label id="label_propel" for="propel" name="subway_tab_label">추진장치 소개</label>
+               </div>
+               <div id="subway_exp">
+                  <h2>경전철이란?</h2>
+                  <p>
+                     중(重)전철과 비교하여 적은 수송용량량 (시간당 5,000~30,000명)을 처리할 수 있는 도시교통 수단으로,
+                     고가 구조물 또는 지하에 독립된 전용 주행로를 설치하거나 경우에 따라서는 도로위에 전용 주행로를 설치하여 완전 자동 무인방식,
+                     1량 또는 다량 편성이 가능한 특징을 갖춘 전기 철도 시스템입니다.
+                  </p>
+                  <div id="subway_exp_content">
+                     <ul>
+                        <li>친환경성</li>
+                        <img src="../images/info_use/subway_img1.png" alt="경전철 소개 1">
+                        <hr>
+                        <li>효율성</li>
+                        <img src="../images/info_use/subway_img2.png" alt="경전철 소개 2">
+                        <hr>
+                        <li>경제성</li>
+                        <img src="../images/info_use/subway_img3.png" alt="경전철 소개 3">
+                     </ul>
+                  </div>
+               </div>
+               <div id="vehicle_exp">
+                  <h2>차량 소개</h2>
+                  <img src="../images/info_use/subway_img4.png" alt="차량 소개1">
+                  <ul>
+                     <li>차량 개요</li>
+                     <table>
+                        <tr>
+                           <th>영업연장</th>
+                           <td>36.016km</td>
+                        </tr>
+                        <tr>
+                           <th>표정속도</th>
+                           <td>36.28km/hr</td>
+                        </tr>
+                        <tr>
+                           <th>수송인원</th>
+                           <td>133명/1량</td>
+                        </tr>
+                        <tr>
+                           <th>운전방식</th>
+                           <td>완전자동 무인운전</td>
+                        </tr>
+                        <tr>
+                           <th>추진방식</th>
+                           <td>선형유도전동기(LIM)</td>
+                        </tr>
+                        <tr>
+                           <th>차륜방식</th>
+                           <td>철제차륜 (D = 660mm)</td>
+                        </tr>
+                     </table>
+                     <li>차량 제작 및 검사</li>
+                     <table>
+                        <tr>
+                           <th>제작사</th>
+                           <td>캐나다 봄바디어 트렌스포테이숀, 30량 제작</td>
+                        </tr>
+                        <tr>
+                           <th>차량종류</th>
+                           <td>1량 1편성, 운전실이 없는 LIM (Linear Induction Motor) 구동방식의 차량</td>
+                        </tr>
+                        <tr>
+                           <th>차량형식</th>
+                           <td>봄바디어 ART, 철제차륜 (D = 660mm)방식의 무인자동운전 직류 전동차 (MK II형)</td>
+                        </tr>
+                        <tr>
+                           <th>검사 및 시험</th>
+                           <td>
+                              제작검정 - 한국철도차량엔지니어링<br>
+                              성능시험 - 한국철도기술연구원
+                           </td>
+                        </tr>
+                     </table>
+                  </ul>
+                  
+               </div>
+               <div id="propel_exp">
+                  <h2>추진장치 소개</h2>
+                  <ul>
+                     <li>LIM(선형유도전동기) 추진장치</li>
+                     <h4>회전형유도전동기를 잘라 펼쳐진 구조로 차체측 1차 코일과 2차 도체판이 직접 추진력 발생</h4>
+                     <ul>
+                        <li>- 차량의 정위치 정차 정밀성 향상</li>
+                        <li>- 차량의 소음감소</li>
+                        <li>- 우수한 등판능력 제공</li>
+                        <li>- 유지보수비 경감</li>
+                        <img src="../images/info_use/subway_img5.png" alt="추진장치 이미지 1">
+                        <img src="../images/info_use/subway_img6.png" alt="추진장치 이미지 2">
+                     </ul>
+                  </ul>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <div id="footer_container">
+         <div id="footer_left">
+            <div id="footer_nav">
+               <ul>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">오시는 길</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">여객운송약관</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">영상정보기기운영관리방침</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">이메일무단수집거부</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">채용공고</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">인트라넷</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">사이트맵</a></li>
+               </ul>
+            </div>
+            <div id="address">
+               주소 : 경기도 용인시 처인구 중부대로 1074 (삼가동) 용인경량전철주식회사 | 대표전화 : 031-329-3500 | COPYRIGHT ⓒ2022 GO JUN-YEONG. ALL RIGHTS RESERVED.
+            </div>
+         </div>
+         <div id="related_company">
+            <select id="select_company" required>
+               <option value="" disabled selected>-유관기관 바로가기-</option>
+               <option value="http://www.djet.co.kr/">DJet</option>
+               <option value="http://www.metro9.co.kr/">Metro 9</option>
+               <option value="https://www.bglrt.com/">BGL</option>
+               <option value="https://www.shinbundang.co.kr/">DXLine 신분당선</option>
+               <option value="https://www.arex.or.kr/">AREX</option>
+               <option value="https://www.ulrt.co.kr/">ULINE</option>
+               <option value="https://www.yongin.go.kr/">용인시</option>
+               <option value="https://www.yicf.or.kr/">용인문화재단</option>
+               <option value="http://www.kric.go.kr/">국토교통부</option>
+               <option value="https://www.ggfc.or.kr/">경기영상위원회</option>
+               <option value="https://info.korail.com/">한국철도공사</option>
+               <option value="http://www.seoulmetro.co.kr/">서울교통공사</option>
+               <option value="http://www.shinbundang2.co.kr/">경기철도주식회사</option>
+               <option value="http://www.humetro.busan.kr/">부산교통공사</option>
+               <option value="https://www.dtro.or.kr/">대구도시철도공사</option>
+               <option value="https://www.ictr.or.kr/">인천교통공사</option>
+               <option value="http://www.gwangjusubway.co.kr/">광주도시철도공사</option>
+            </select>
+            <button type="button" onclick="companyhyperlink()">GO</button>
+            <script src="../JS/companyhyperlink.js"></script>
+         </div>
+         <div class="clear"></div>
+      </div>
+   </footer>
+</body>
+</html>

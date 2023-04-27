@@ -1,0 +1,132 @@
+#content_customer {
+   padding: 30px;
+}
+#explain, #customer_sound {
+   display: none;
+}
+#label_wrap {
+   display: flex;
+   width: 100%;
+}
+#label_explain, #label_sound {
+   border: 1px solid rgba(0, 52, 77, 0.5);
+   width: 100%;
+   height: 50px;
+   padding: 10px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+#label_explain {
+   margin-right: 10px;
+}
+#explain:checked ~ #explain {
+   display: block;
+}
+#explain:checked ~ #customer_sound {
+   display: none;
+}
+#explain:checked ~ #label_wrap > #label_explain {
+   color: rgb(0, 52, 77);
+}
+#explain:checked ~ #label_wrap > #label_sound {
+   color: rgba(51, 51, 51, 0.5);
+}
+#customer_sound:checked ~ #explain {
+   display: none;
+}
+#customer_sound:checked ~ #customer_sound {
+   display: block;
+}
+#customer_sound:checked ~ #label_wrap > #label_explain {
+   color: rgba(51, 51, 51, 0.5);
+}
+#customer_sound:checked ~ #label_wrap > #label_sound {
+   color: rgb(0, 52, 77);
+}
+#explain_content {
+   width: 100%;
+   margin-top: 30px;
+}
+#explain_content > ol {
+   padding-left: 40px;
+   margin-top: 20px;
+}
+#explain_content > ol > li {
+   list-style: decimal;
+   line-height: 1.8em;
+   font-size: 0.9em;
+   font-weight: bold;
+}
+#explain_content > h3 {
+   margin: 30px 0;   
+   color: green;
+}
+#explain_content table {
+   border-collapse: collapse;
+}
+#explain_content th, #explain_content td {
+   border: 1px solid rgba(128, 128, 128, 0.5);
+   padding: 20px;
+}
+#explain_content th {
+   width: 150px;
+   background-color: rgba(128, 128, 128, 0.1);
+   color: gray;
+}
+#explain_content td {
+   font-size: 0.9em;
+   line-height: 1.5em;
+}
+#explain_content > p {
+   font-size: 0.9em;
+}
+#sound_content {
+   width: 100%;
+   padding: 30px 50px;
+}
+#sound_content > textarea {
+   width: 100%;
+   height: 500px;
+   resize: none;
+   font-size: 1.2em;
+   padding: 20px;
+}
+#sound_content > button {
+   width: 120px;
+   height: 50px;
+   margin: 10px auto;
+   display: block;
+   font-size: 1.2em;
+   color: #fff;
+   background-color: rgb(0, 52, 77);
+}
+#sound_content > p {
+   font-size: 0.7em;
+   color: green;
+   margin-bottom: 10px;
+}
+#sound_content > label {
+   display: block;
+   margin-bottom: 15px;
+}
+#sound_content  input {
+   width: 500px;
+   height: 40px;
+   padding: 10px;
+   font-size: 1.1em;
+}
+#explain:checked ~ #explain_content {
+   display: block;
+}
+#explain:checked ~ #sound_content {
+   display: none;
+}
+#customer_sound:checked ~ #explain_content {
+   display: none;
+}
+#customer_sound:checked ~ #sound_content {
+   display: block;
+}

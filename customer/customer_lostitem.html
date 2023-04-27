@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../CSS/customer/customer_base.css">
+   <link rel="stylesheet" href="../CSS/customer/customer_lostitem.css">
+   <title>용인경량전철</title>
+</head>
+<body>
+   <header>
+      <div id="header_wrap">
+         <div id="logo"><a href="../index.html"><img src="../images/logo.png" alt="로고"></a></div>
+         <div id="navi">
+            <ul>
+               <li class="s_menu_parent">
+                  <a id="use_menu" href="../info_use/Info_use_info_map.html">이용안내</a>
+                  <ul class="s_menu" id="s_menu_use">
+                     <li><a href="../info_use/Info_use_info_map.html">경전철 이용정보</a></li>
+                     <li><a href="../info_use/Info_use_info_stationinfo.html">역 정보</a></li>
+                     <li><a href="../info_use/Info_use_info_facility.html">편의시설 정보</a></li>
+                     <li><a href="../info_use/Info_use_info_subway.html">경전철 소개</a></li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="notice_menu" href="../notice/notice_notice.html">알림마당</a>
+                  <ul class="s_menu" id="s_menu_notice">
+                     <li><a href="../notice/notice_notice.html">공지사항</a></li>
+                     <li>입찰정보</li>
+                     <li>채용정보</li>
+                     <li>홍보자료</li>
+                     <li>추천맛집</li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="customer_menu" class="selected_menu" href="customer_customer.html">고객마당</a>
+                  <ul class="s_menu" id="s_menu_customer">
+                     <li><a href="customer_customer.html">고객의 소리</a></li>
+                     <li><a href="customer_lostitem.html">유실물 센터</a></li>
+                     <li>지연증명서 발급</li>
+                     <li>고객 서비스 현장</li>
+                     <li>광고문의</li>
+                     <li>안전신문고</li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="safety_menu" href="../safety/safety_management.html">안전환경</a>
+                  <ul class="s_menu" id="s_menu_safety">
+                     <li><a href="../safety/safety_management.html">안전경영</a></li>
+                     <li>안전가이드</li>
+                     <li>안전시설</li>
+                     <li>안전시스템 소개</li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="company_menu" href="../company/company_ceo.html">회사소개</a>
+                  <ul class="s_menu" id="s_menu_company">
+                     <li><a href="../company/company_ceo.html">CEO 인사말</a></li>
+                     <li>ESG 경영 소개</li>
+                     <li>조직도</li>
+                     <li>CI/BI 소개</li>
+                     <li>주요 연혁</li>
+                     <li>운영사 소개</li>
+                     <li>찾아오시는길</li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div id="min_menu">
+            <div id="search"><img onclick="search_text()" src="../images/search.png" alt="검색"></div>
+            <img class="m_menu_bar" src="../images/navbar.png">
+            <div id="login"><a href="../login.html"><img src="../images/login.png" alt="로그인"></a></div>
+            <img class="m_menu_bar" src="../images/navbar.png">
+            <div id="lang"><a href="#"><img src="../images/lang.png" alt="언어변경"></a></div>
+            <img class="m_menu_bar" src="../images/navbar.png">
+            <div id="sitemap"><a href="#"><img src="../images/sitemap.png" alt="언어변경"></a></div>
+         </div>
+         <div class="clear"></div>
+      </div>
+   </header>
+   <div id="search_wrap">
+      <div id="search_text">
+         <input type="text" placeholder="검색">
+         <button type="button">검색</button>
+      </div>
+   </div>
+   <script src="../JS/seach_onoff.js"></script>
+   <div id="header2">
+      <div id="side_menu_h"><span>고객마당</span></div>
+   </div>
+   <div id="container">
+      <div id="content">
+         <div id="side_bar">
+            <ul>
+               <li><a href="customer_customer.html">고객의 소리</a></li>
+               <li class="selected_sidemenu"><a class="selected_sidemenu" href="Info_use_info_stationinfo.html">유실물 센터</a></li>
+               <li><a href="#">지연증명서 발급</a></li>
+               <li><a href="#">광고 문의</a></li>
+               <li><a href="#">안전 신문고</a></li>
+            </ul>
+         </div>
+         <div id="customer">
+            <span id="customer_header">유실물 센터</span>
+            <div class="customer_hr"></div>
+            <div id="content_lostitem">
+               <div id="lostitem_content">
+                  <ul>
+                     <li>유실물센터 신고방법</li>
+                     <p>열차에서 내리자 마자 분실사실을 알게 되셨나요? 즉시 <span>유실물센터(031-329-3551)</span>로 신고하여 주세요!</p>
+                     <li>유실물을 빨리 찾는 팁!</li>
+                     <ul>
+                        <li>하차시간을 확인해 주세요!</li>
+                        <li>하차한 차량의 위치를 확인해 주세요!</li>
+                     </ul>
+                     <li>타 운영기관 유실물 센터 안내</li>
+                     <table>
+                        <tr>
+                           <th>신분당선<br><a href="http://www.shinbundang.co.kr">http://www.shinbundang.co.kr</a></th>
+                           <td>양재역 센터</td>
+                           <td>031-8018-7777</td>
+                        </tr>
+                        <tr>
+                           <th>의정부 경전철<br><a href="https://www.ulrt.co.kr">https://www.ulrt.co.kr</a></th>
+                           <td>차량기지 내</td>
+                           <td>031-820-1004</td>
+                        </tr>
+                        <tr>
+                           <th rowspan="4">서울교통공사<br><a href="http://www.seoulmetro.co.kr">http://www.seoulmetro.co.kr</a></th>
+                           <td>시청역 (1, 2호선)</td>
+                           <td>02-6110-1122</td>
+                        </tr>
+                        <tr>
+                           <td>충무로역 (3, 4호선)</td>
+                           <td>02-6110-3344</td>
+                        </tr>
+                        <tr>
+                           <td>왕십리역 (5, 8호선)</td>
+                           <td>02-6311-6765, 6768</td>
+                        </tr>
+                        <tr>
+                           <td>태릉입구역 (6, 7호선)</td>
+                           <td>02-6311-6766, 6767</td>
+                        </tr>
+                        <tr>
+                           <th rowspan="14">코레일<br><a href="http://www.letskorail.com">http://www.letskorail.com</a></th>
+                           <td>구로역 (1호선)</td>
+                           <td>02-869-0089</td>
+                        </tr>
+                        <tr>
+                           <td>병점역 (1호선)</td>
+                           <td>031-234-7788</td>
+                        </tr>
+                        <tr>
+                           <td>광운대역 (1호선)</td>
+                           <td>02-917-7445</td>
+                        </tr>
+                        <tr>
+                           <td>삼송역 (3호선)</td>
+                           <td>02-371-0087</td>
+                        </tr>
+                        <tr>
+                           <td>대곡역 (3호선)</td>
+                           <td>031-965-8516</td>
+                        </tr>
+                        <tr>
+                           <td>정발산역 (3호선)</td>
+                           <td>031-904-7799</td>
+                        </tr>
+                        <tr>
+                           <td>대화역 (3호선)</td>
+                           <td>031-917-7799</td>
+                        </tr>
+                        <tr>
+                           <td>청량리역 (중앙선)</td>
+                           <td>031-3299-7208</td>
+                        </tr>
+                        <tr>
+                           <td>죽전역 (분당선)</td>
+                           <td>031-896-9791</td>
+                        </tr>
+                        <tr>
+                           <td>상봉역 (경춘선)</td>
+                           <td>02-432-7783</td>
+                        </tr>
+                        <tr>
+                           <td>춘천역 (경춘선)</td>
+                           <td>033-241-7758</td>
+                        </tr>
+                        <tr>
+                           <td>안산역 (4호선)</td>
+                           <td>031-491-7788</td>
+                        </tr>
+                        <tr>
+                           <td>송도역 (수인선)</td>
+                           <td>031-8077-5593</td>
+                        </tr>
+                        <tr>
+                           <td>능곡역 (경의선)</td>
+                           <td>031-974-7788</td>
+                        </tr>
+                        <tr>
+                           <th>소사원시<br><a href="http://www.sosawonsi.co.kr">http://www.sosawonsi.co.kr</a></th>
+                           <td>초지역</td>
+                           <td>031-5183-2798</td>
+                        </tr>
+                        <tr>
+                           <th>서울메트로9<br><a href="http://www.metro9.co.kr">http://www.metro9.co.kr</a></th>
+                           <td>동작역 센터</td>
+                           <td>02-2656-0009</td>
+                        </tr>
+                        <tr>
+                           <th>공항철도<br><a href="http://www.arex.or.kr">http://www.arex.or.kr</a></th>
+                           <td>검암역 센터</td>
+                           <td>032-745-7777</td>
+                        </tr>
+                        <tr>
+                           <th>인천지하철<br><a href="http://www.ictr.or.kr">http://www.ictr.or.kr</a></th>
+                           <td>부평 삼거리역 센터</td>
+                           <td>032-451-3650</td>
+                        </tr>
+                        <tr>
+                           <th>서울시 대중교통 통합분실물 센터<br><a href="http://www.seoul.go.kr">http://www.seoul.go.kr</a></th>
+                           <td>서울시다산콜센터</td>
+                           <td>120</td>
+                        </tr>
+                        <tr>
+                           <th>경찰청<br><a href="https://www.lost112.go.kr">https://www.lost112.go.kr</a></th>
+                           <td>경찰청</td>
+                           <td>02-2299-1282</td>
+                        </tr>
+                     </table>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <div id="footer_container">
+         <div id="footer_left">
+            <div id="footer_nav">
+               <ul>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">오시는 길</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">여객운송약관</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">영상정보기기운영관리방침</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">이메일무단수집거부</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">채용공고</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">인트라넷</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">사이트맵</a></li>
+               </ul>
+            </div>
+            <div id="address">
+               주소 : 경기도 용인시 처인구 중부대로 1074 (삼가동) 용인경량전철주식회사 | 대표전화 : 031-329-3500 | COPYRIGHT ⓒ2022 GO JUN-YEONG. ALL RIGHTS RESERVED.
+            </div>
+         </div>
+         <div id="related_company">
+            <select id="select_company" required>
+               <option value="" disabled selected>-유관기관 바로가기-</option>
+               <option value="http://www.djet.co.kr/">DJet</option>
+               <option value="http://www.metro9.co.kr/">Metro 9</option>
+               <option value="https://www.bglrt.com/">BGL</option>
+               <option value="https://www.shinbundang.co.kr/">DXLine 신분당선</option>
+               <option value="https://www.arex.or.kr/">AREX</option>
+               <option value="https://www.ulrt.co.kr/">ULINE</option>
+               <option value="https://www.yongin.go.kr/">용인시</option>
+               <option value="https://www.yicf.or.kr/">용인문화재단</option>
+               <option value="http://www.kric.go.kr/">국토교통부</option>
+               <option value="https://www.ggfc.or.kr/">경기영상위원회</option>
+               <option value="https://info.korail.com/">한국철도공사</option>
+               <option value="http://www.seoulmetro.co.kr/">서울교통공사</option>
+               <option value="http://www.shinbundang2.co.kr/">경기철도주식회사</option>
+               <option value="http://www.humetro.busan.kr/">부산교통공사</option>
+               <option value="https://www.dtro.or.kr/">대구도시철도공사</option>
+               <option value="https://www.ictr.or.kr/">인천교통공사</option>
+               <option value="http://www.gwangjusubway.co.kr/">광주도시철도공사</option>
+            </select>
+            <button type="button" onclick="companyhyperlink()">GO</button>
+            <script src="../JS/companyhyperlink.js"></script>
+         </div>
+         <div class="clear"></div>
+      </div>
+   </footer>
+</body>
+</html>

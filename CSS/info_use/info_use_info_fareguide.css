@@ -1,0 +1,55 @@
+#info_contents {
+   padding: 20px;
+}
+#info_contents > ul {
+   margin: 20px 0;
+   padding-left: 20px;
+}
+#info_contents > ul > li {
+   list-style: square;
+   line-height: 3em;
+   font-weight: bold;
+}
+#info_contents > ul >li > ul >li {
+   list-style: circle;
+   margin-left: 20px;
+   font-size: 0.9em;
+   font-weight: normal;
+   line-height: 2em;
+}
+#list_decimal1 > li, #list_decimal2 > li {
+   list-style: decimal;
+   margin-left: 25px;
+   font-size: 0.9em;
+   font-weight: normal;
+   line-height: 2em;
+}
+#info_contents p {
+   font-size: 0.9em;
+   color: green;
+}
+#info_contents table {
+   text-align: center;
+   border-collapse: collapse;
+   width: 100%;
+   margin: 20px 0;
+   font-size: 0.9em;
+}
+#info_contents caption {
+   caption-side: bottom;
+   text-align: left;
+   margin-top: 10px;
+   font-size: 0.9em;
+   color: green;
+}
+#info_contents table th, #info_contents table td {
+   border: 1px solid rgba(128, 128, 128, 0.5);
+   padding: 20px;
+   /* font-size: 0.8em; */
+}
+#info_contents table th {
+   background-color: rgba(128, 128, 128, 0.1);
+}
+#info_contents td {
+   font-weight: normal;
+}

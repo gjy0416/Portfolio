@@ -1,0 +1,68 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+#container {
+   height: 100%;
+   width: 100%;
+}
+#content {
+   margin: 30px auto;
+   width: 400px;
+}
+#logo {
+   margin: 30px auto;
+}
+#logo img {
+   width: 300px;
+   display: block;
+   margin: 0 auto;
+}
+#id, #password, #password_check, #name, #sex, #email {
+   width: 400px;
+   height: 50px;
+   display: block;
+   margin: 15px 0;
+   border: 1px solid rgba(128, 128, 128, 0.5);
+   padding: 15px;
+   font-size: 1.1em;
+}
+#birth {
+   display: flex;
+   width: 400px;
+}
+#year, #month, #date {
+   width: 100%;
+   height: 50px;
+   display: block;
+   margin-bottom: 20px;
+   border: 1px solid rgba(128, 128, 128, 0.5);
+   padding: 10px;
+   font-size: 1.1em;
+}
+#year, #month {
+   margin-right: 5px;
+}
+#content label {
+   display: block;
+   margin: 10px 0;
+   font-weight: bold;
+}
+#sex option:first-child, #month option:first-child {
+   display: none;
+}
+#content button {
+   width: 400px;
+   height: 50px;
+   color: #fff;
+   background-color: rgb(0, 52, 77);
+   font-size: 1.3em;
+   font-weight: bold;
+   padding: 5px;
+}
+.alert_mintext {
+   font-size: 0.8em;
+   color: red;
+   font-weight: bold;
+}

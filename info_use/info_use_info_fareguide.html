@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../CSS/info_use/Info_use_base.css">
+   <link rel="stylesheet" href="../CSS/info_use/info_use_info_fareguide.css">
+   <title>용인경량전철</title>
+</head>
+<body>
+   <header>
+      <div id="header_wrap">
+         <div id="logo"><a href="../index.html"><img src="../images/logo.png" alt="로고"></a></div>
+         <div id="navi">
+            <ul>
+               <li class="s_menu_parent">
+                  <a id="use_menu" class="selected_menu" href="info_use_info_map.html">이용안내</a>
+                  <ul class="s_menu" id="s_menu_use">
+                     <li><a href="Info_use_info_map.html">경전철 이용정보</a></li>
+                     <li><a href="Info_use_info_stationinfo.html">역 정보</a></li>
+                     <li><a href="Info_use_info_facility.html">편의시설 정보</a></li>
+                     <li><a href="Info_use_info_subway.html">경전철 소개</a></li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="notice_menu" href="../notice/notice_notice.html">알림마당</a>
+                  <ul class="s_menu" id="s_menu_notice">
+                     <li><a href="../notice/notice_notice.html">공지사항</a></li>
+                     <li>입찰정보</li>
+                     <li>채용정보</li>
+                     <li>홍보자료</li>
+                     <li>추천맛집</li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="customer_menu" href="../customer/customer_customer.html">고객마당</a>
+                  <ul class="s_menu" id="s_menu_customer">
+                     <li><a href="../customer/customer_customer.html">고객의 소리</a></li>
+                     <li><a href="../customer/customer_lostitem.html">유실물 센터</a></li>
+                     <li>지연증명서 발급</li>
+                     <li>고객 서비스 현장</li>
+                     <li>광고문의</li>
+                     <li>안전신문고</li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="safety_menu" href="../safety/safety_management.html">안전환경</a>
+                  <ul class="s_menu" id="s_menu_safety">
+                     <li><a href="../safety/safety_management.html">안전경영</a></li>
+                     <li>안전가이드</li>
+                     <li>안전시설</li>
+                     <li>안전시스템 소개</li>
+                  </ul>
+               </li>
+               <img class="header_navbar" src="../images/navbar.png">
+               <li class="s_menu_parent">
+                  <a id="company_menu" href="../company/company_ceo.html">회사소개</a>
+                  <ul class="s_menu" id="s_menu_company">
+                     <li><a href="../company/company_ceo.html">CEO 인사말</a></li>
+                     <li>ESG 경영 소개</li>
+                     <li>조직도</li>
+                     <li>CI/BI 소개</li>
+                     <li>주요 연혁</li>
+                     <li>운영사 소개</li>
+                     <li>찾아오시는길</li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div id="min_menu">
+            <div id="search"><img onclick="search_text()" src="../images/search.png" alt="검색"></div>
+            <img class="m_menu_bar" src="../images/navbar.png">
+            <div id="login"><a href="../login.html"><img src="../images/login.png" alt="로그인"></a></div>
+            <img class="m_menu_bar" src="../images/navbar.png">
+            <div id="lang"><a href="#"><img src="../images/lang.png" alt="언어변경"></a></div>
+            <img class="m_menu_bar" src="../images/navbar.png">
+            <div id="sitemap"><a href="#"><img src="../images/sitemap.png" alt="언어변경"></a></div>
+         </div>
+         <div class="clear"></div>
+      </div>
+   </header>
+   <div id="search_wrap">
+      <div id="search_text">
+         <input type="text" placeholder="검색">
+         <button type="button">검색</button>
+      </div>
+   </div>
+   <script src="../JS/seach_onoff.js"></script>
+   <div id="header2">
+      <div id="side_menu_h"><span>이용안내</span></div>
+   </div>
+   <div id="container">
+      <div id="content">
+         <div id="side_bar">
+            <ul>
+               <li>
+                  <a>경전철 이용정보</a>
+                  <input id="list_unfold" type="checkbox" checked>
+                  <label id="foldable_label" for="list_unfold"><img id="foldable_change_img" src="../images/info_use/unfold_icon_up.png"></label>
+                  <ul>
+                     <li><a href="info_use_info_map.html">노선 안내</a></li>
+                     <li><a href="info_use_info_ticket.html">승차권 구입</a></li>
+                     <li class="selected_sidemenu"><a class="selected_sidemenu" href="info_use_info_fareguide.html">운임안내</a></li>
+                  </ul>
+               </li>
+               <li><a href="Info_use_info_stationinfo.html">역 정보</a></li>
+               <li><a href="Info_use_info_facility.html">편의시설 정보</a></li>
+               <li><a href="Info_use_info_subway.html">경전철 소개</a></li>
+            </ul>
+            </ul>
+         </div>
+         <script src="../JS/info_use/foldablelabel_onoff.js"></script>
+         <div id="info">
+            <span id="info_header">운임안내</span>
+            <div class="info_hr"></div>
+            <div id="info_contents">
+               <table>
+                  <tr>
+                     <th rowspan="2">구분</th><th colspan="2">운임</th><th rowspan="2">비고</th>
+                  </tr>
+                  <tr>
+                     <th>교통카드</th><th>1회용 승차권<br>(카드 및 토큰)</th>
+                  </tr>
+                  <tr>
+                     <td>일반<br>(만 19세이상 ~ 만 65세 미만)</td><td>1,450원</td><td>1,550원</td><td>별도운임 200원 적용</td>
+                  </tr>
+                  <tr>
+                     <td>청소년<br>(만 13세이상 ~ 만 19세 미만)</td><td>880원</td><td>1,550원</td><td>청소년 교통카드에 한하여 할인가능</td>
+                  </tr>
+                  <tr>
+                     <td>어린이<br>(만 6세이상 ~ 만 13세 미만)</td><td>550원</td><td>550원</td><td>어린이용 교통카드 및 1회권 승차권 할인</td>
+                  </tr>
+                  <tr>
+                     <td>유아br>(만 6세 미만)</td><td>무임</td><td>무임</td><td>보호자 1인 동반 유아 3인 이하에 한함</td>
+                  </tr>
+               </table>
+               <ul>
+                  <li>
+                     운영목적 및 이용방법
+                     <ul>
+                        <li>수도권 전철 기본운임 (1,250원) + 별도운임 (200원)</li>
+                     </ul>
+                  </li>
+                  <li>
+                     이용 거리초과 시 추가운임 부과
+                     <ul>
+                        <li>10km ~ 초과 ~ 50km까지 (5km 마다 100원)</li>
+                        <li>50km 초과 시 (8km 마다 100원)</li>
+                     </ul>
+                  </li>
+                  <li>
+                     우대용 승차권 이용안내 (해당 증명서를 소지한 고객에게만 적용)
+                     <ol id="list_decimal1">
+                        <li>
+                           경로우대 (100% 할인)
+                           <ul><li>- 만 65세 이상 무임 (100% 할인)</li></ul>
+                        </li>
+                        <li>
+                           장애인 우대 (중증/경증)
+                           <ul>
+                              <li>- 장애인 복지 법률의 의거 해당자에게 무임 (100% 할인)</li>
+                              <li>- 장애인 (중증)은 보호자 1인 무임 (100% 할인)</li>
+                           </ul>
+                        </li>
+                        <li>
+                           국가 유공자 우대
+                           <ul><li>- 국가 유공자 등 예우 및 지원에 관한 법률에 의거 해당자에게 무임 (100% 할인)</li></ul>
+                        </li>
+                        <p>&#8251; 위 사항은 해당 증명서를 소지한 고객에게만 적용됩니다.</p>
+                     </ol>
+                  </li>
+                  <li>
+                     할인혜택
+                     <ul>
+                        <li>첫차 ~ 06:30 이전 초승시 기본운임의 20% 할인 (선,후불 교통카드 이용 시)</li>
+                     </ul>
+                  </li>
+                  <li>
+                     1회용 승차권 (카드)
+                     <ul>
+                        <li>수도권 지하철과 동일 사용</li>
+                     </ul>
+                  </li>
+                  <li>
+                     1회용 승차권 (토큰)
+                     <ul>
+                        <li>용인경량전철 단독구간 (기흥역 ~ 전대역)에서만 사용 가능</li>
+                     </ul>
+                  </li>
+                  <li>
+                     단체요금 안내
+                     <table>
+                        <caption>&#8251; 단체권은 용인경량전철 구간 (기흥 ~ 전대)내에서만 발매 가능</caption>
+                        <tr>
+                           <th>구분</th><th>1구간</th><th>2구간</th><th>3구간</th>
+                        </tr>
+                        <tr>
+                           <td>일반</td><td>1,160원</td><td>1,240원</td><td>1,320원</td>
+                        </tr>
+                        <tr>
+                           <td>청소년</td><td>770원</td><td>840원</td><td>910원</td>
+                        </tr>
+                        <tr>
+                           <td>어린이</td><td>440원</td><td>480원</td><td>520원</td>
+                        </tr>
+                     </table>
+                     <ol id="list_decimal2">
+                        <li>일반 : 일반카드운임의 20% 할인</li>
+                        <li>청소년 : 일반카드운임에서 350원 제한 후 30% 할인</li>
+                        <li>어린이 : 일반카드운임에서 350원 제한 후 60% 할인</li>
+                        <li>단체 20명 마다 1인은 무임</li>
+                        <li>일반과 청소년 또는 어린이가 혼승할 경우 무임인원 산정은 구분 없이 총 단체인원 20명 마다 1명씩.<br>단, 무임이원에 적용은 요금이 많은 순서</li>
+                        <li>단체권은 용인경량전철 각 역사 역무실(출발역)에서 현금으로만 구입 가능 (문의전화 : 031-329-3570)</li>
+                     </ol>
+                  </li>
+                  <li>
+                     정기권
+                     <ul>
+                        <li>용인경량전철 각 역사 역무실에서 카드(2,500원) 별도 구매 후 충전 사용</li>
+                        <li>정기권 단계별 운임 산출기준 : 종별 교통카드 기본운임 X 44회 X 15% 할인<br>(단, 1,250원 ~ 1,450원 구간은 1,250원 X 44회 적용)</li>
+                        <li>지정된 사용구간 외의 역에서는 승차가 불가하며, 지정된 사용구간 초과 시 잔여횟수에서 차감됩니다.</li>
+                        <li>권종별 정기권 운임표</li>
+                     </ul>
+                  </li>
+                  <li>
+                     거리비례용 정기권 이용거리 및 운임 (단위 : 원)
+                     <table>
+                        <tr>
+                           <th colspan="3">정기권</th><th rowspan="2">종별<br>1회권 운임</th><th rowspan="2">종별<br>교통카드 운임</th>
+                        </tr>
+                        <tr>
+                           <th>종별 (단계)</th><th>운임</th><th>이용거리</th>
+                        </tr>
+                        <tr>
+                           <td>1</td><td>55,000</td><td>20km까지</td><td>1,550</td><td>1,450</td>
+                        </tr>
+                        <tr>
+                           <td>2</td><td>58,000</td><td>25km까지</td><td>1,650</td><td>1,550</td>
+                        </tr>
+                        <tr>
+                           <td>3</td><td>61,700</td><td>30km까지</td><td>1,750</td><td>1,650</td>
+                        </tr>
+                        <tr>
+                           <td>4</td><td>65,500</td><td>35km까지</td><td>1,850</td><td>1,750</td>
+                        </tr>
+                        <tr>
+                           <td>5</td><td>69,200</td><td>40km까지</td><td>1,950</td><td>1,850</td>
+                        </tr>
+                        <tr>
+                           <td>6</td><td>72,900</td><td>45km까지</td><td>2,050</td><td>1,950</td>
+                        </tr>
+                        <tr>
+                           <td>7</td><td>76,700</td><td>50km까지</td><td>2,150</td><td>2,050</td>
+                        </tr>
+                        <tr>
+                           <td>8</td><td>80,400</td><td>58km까지</td><td>2,250</td><td>2,150</td>
+                        </tr>
+                        <tr>
+                           <td>9</td><td>84,200</td><td>66km까지</td><td>2,350</td><td>2,250</td>
+                        </tr>
+                        <tr>
+                           <td>10</td><td>87,900</td><td>74km까지</td><td>2,450</td><td>2,350</td>
+                        </tr>
+                        <tr>
+                           <td>11</td><td>91,600</td><td>82km까지</td><td>2,550</td><td>2,450</td>
+                        </tr>
+                        <tr>
+                           <td>12</td><td>95,400</td><td>90km까지</td><td>2,650</td><td>2,550</td>
+                        </tr>
+                        <tr>
+                           <td>13</td><td>99,100</td><td>98km까지</td><td>2,750</td><td>2,650</td>
+                        </tr>
+                        <tr>
+                           <td>14</td><td>102,900</td><td>98km초과</td><td>2,850</td><td>2,750</td>
+                        </tr>
+                     </table>
+                     <table>
+                        <tr>
+                           <th>종별(단계)</th><th>통용구간</th>
+                        </tr>
+                        <tr>
+                           <td>1 ~ 7</td><td>수도권도시철도구간 및 용인경량전철 구간</td>
+                        </tr>
+                        <tr>
+                           <td>8 ~ 14</td><td>수도권도시철도구간, 신분당선구간 및 용인경량전철 구간</td>
+                        </tr>
+                     </table>
+                  </li>
+                  <li>
+                     서울전용 정기권 이용거리 및 운임 (단위 : 원)
+                     <table>
+                        <caption>&#8251; 부정승차 적발 시에는 어른용 1회권 운임(어린이는 할인권 운임)과 그 30배의 운임을 부가합니다.</caption>
+                        <tr>
+                           <th colspan="3">정기권</th><th rowspan="2">종별<br>1회권 운임</th><th rowspan="2">종별<br>교통카드 운임</th>
+                        </tr>
+                        <tr>
+                           <th>종별 (단계)</th><th>운임</th><th>이용거리</th>
+                        </tr>
+                        <tr>
+                           <td>서울전용</td><td>55,000</td><td>서울시계 내/td><td>1,550</td><td>1,450</td>
+                        </tr>
+                     </table>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="clear"></div>
+      </div>
+   </div>
+   <footer>
+      <div id="footer_container">
+         <div id="footer_left">
+            <div id="footer_nav">
+               <ul>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">오시는 길</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">여객운송약관</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">영상정보기기운영관리방침</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">이메일무단수집거부</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">채용공고</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">인트라넷</a></li>
+                  <img src="../images/navbarwh.png">
+                  <li><a href="#">사이트맵</a></li>
+               </ul>
+            </div>
+            <div id="address">
+               주소 : 경기도 용인시 처인구 중부대로 1074 (삼가동) 용인경량전철주식회사 | 대표전화 : 031-329-3500 | COPYRIGHT ⓒ2022 GO JUN-YEONG. ALL RIGHTS RESERVED.
+            </div>
+         </div>
+         <div id="related_company">
+            <select id="select_company" required>
+               <option value="" disabled selected>-유관기관 바로가기-</option>
+               <option value="http://www.djet.co.kr/">DJet</option>
+               <option value="http://www.metro9.co.kr/">Metro 9</option>
+               <option value="https://www.bglrt.com/">BGL</option>
+               <option value="https://www.shinbundang.co.kr/">DXLine 신분당선</option>
+               <option value="https://www.arex.or.kr/">AREX</option>
+               <option value="https://www.ulrt.co.kr/">ULINE</option>
+               <option value="https://www.yongin.go.kr/">용인시</option>
+               <option value="https://www.yicf.or.kr/">용인문화재단</option>
+               <option value="http://www.kric.go.kr/">국토교통부</option>
+               <option value="https://www.ggfc.or.kr/">경기영상위원회</option>
+               <option value="https://info.korail.com/">한국철도공사</option>
+               <option value="http://www.seoulmetro.co.kr/">서울교통공사</option>
+               <option value="http://www.shinbundang2.co.kr/">경기철도주식회사</option>
+               <option value="http://www.humetro.busan.kr/">부산교통공사</option>
+               <option value="https://www.dtro.or.kr/">대구도시철도공사</option>
+               <option value="https://www.ictr.or.kr/">인천교통공사</option>
+               <option value="http://www.gwangjusubway.co.kr/">광주도시철도공사</option>
+            </select>
+            <button type="button" onclick="companyhyperlink()">GO</button>
+            <script src="../JS/companyhyperlink.js"></script>
+         </div>
+         <div class="clear"></div>
+      </div>
+   </footer>
+</body>
+</html>

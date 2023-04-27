@@ -1,0 +1,105 @@
+#oldmen, #normalmen {
+   display: none;
+}
+#label_oldmen, #label_normalmen {
+   border: 1px solid rgba(0, 52, 77, 0.5);
+   width: 100%;
+   height: 50px;
+   padding: 10px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+#label_oldmen {
+   margin-right: 10px;
+}
+#oldmen:checked ~ #oldmen_exp {
+   display: block;
+}
+#oldmen:checked ~ #normalmen_exp {
+   display: none;
+}
+#oldmen:checked ~ #label_wrap > #label_oldmen {
+   color: rgb(0, 52, 77);
+}
+#oldmen:checked ~ #label_wrap > #label_normalmen {
+   color: rgba(51, 51, 51, 0.5);
+}
+#normalmen:checked ~ #oldmen_exp {
+   display: none;
+}
+#normalmen:checked ~ #normalmen_exp {
+   display: block;
+}
+#normalmen:checked ~ #label_wrap > #label_oldmen {
+   color: rgba(51, 51, 51, 0.5);
+}
+#normalmen:checked ~ #label_wrap > #label_normalmen {
+   color: rgb(0, 52, 77);
+}
+#content_facility {
+   width: 100%;
+   position: relative;
+}
+#label_wrap {
+   width: 100%;
+   display: flex;
+   margin-top: 50px;
+   margin-bottom: 20px
+}
+#oldmen_exp, #normalmen_exp {
+   width: 100%;
+   padding: 30px;
+   position: relative;
+}
+#normalmen_exp {
+   display: none;
+}
+#oldmen_exp > h2, #normalmen_exp > h2 {
+   color: green;
+   font-size: 1.8em;
+}
+#oldmen_exp > p, #normalmen_exp > p  {
+   padding: 20px;
+   margin: 10px;
+   font-size: 0.8em;
+   line-height: 1.5em;
+}
+#oldmen_imgs {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 450px);
+   grid-template-rows: repeat(3, 350px);
+   grid-template-areas: 
+   "box1" "box2"
+   "box3" "box4"
+   "box5" "box6";
+   justify-content: center;
+}
+#normalmen_imgs {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 450px);
+   grid-template-rows: repeat(2, 350px);
+   grid-template-areas: 
+   "box1" "box2"
+   "box3" "box4";
+   justify-content: center;
+}
+#oldmen_imgs > figure, #normalmen_imgs > figure {
+   width: 100%;
+   height: 80%;
+   padding: 20px;
+   
+}
+#oldmen_imgs > figure > img, #normalmen_imgs > figure > img {
+   width: 400px;
+   height: 300px;
+}
+figcaption {
+   text-align: center;
+   font-weight: bold;
+   font-size: 0.8em;
+}

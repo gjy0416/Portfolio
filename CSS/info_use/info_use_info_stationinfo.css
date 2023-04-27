@@ -1,0 +1,130 @@
+#station_contents {
+   padding: 30px;
+   text-align: center;
+   position: relative;
+}
+#station_contents > span {
+   color: green;
+   font-size: 1.5em;
+   font-weight: bold;
+   display: block;
+   margin-bottom: 10px;
+   text-align: left;
+}
+#station_contents > button {
+   height: 50px;
+   width: 100px;
+   font-size: 1.5em;
+   background-color: green;
+   border: none;
+   color: #fff;
+   border-radius: 10px;
+}
+#station_contents > button:hover {
+   cursor: pointer;
+}
+#station_select {
+   width: 300px;
+   height: 50px;
+   font-size: 1.5em;
+   text-align: center;
+   margin: 50px 0;
+}
+#station_select option:first-child{
+   display: none;
+}
+#stations_info {
+   display: none;
+}
+#giheung_info {
+   margin-top: 50px;
+   width: 100%;
+}
+#giheung_info > ul {
+   width: 100%;
+   display: flex;
+   flex-flow: column wrap;
+}
+#giheung_info > ul >li {
+   width: 100%;
+   height: 50px;
+   display: block;
+   padding: 15px 30px;
+   border: 1px solid;
+   cursor: pointer;
+}
+#staitonInfo {
+   width: 100%;
+   margin: 20px auto;
+}
+#staitonInfo table {
+   border-collapse: collapse;
+   width: 100%;
+   margin-top: 15px;
+}
+#staitonInfo table th, #staitonInfo table td {
+   border: 1px solid rgba(128, 128, 128, 0.5);
+   padding: 20px;
+}
+#staitonInfo table th {
+   background-color:rgba(128, 128, 128, 0.1);
+}
+#staitonInfo table td {
+   text-align: left;
+}
+#staitonInfo p, #facility_guide p , #use_guide p {
+   text-align: left;
+   font-size: 1.5em;
+   font-weight: bold;
+   margin: 20px;
+   color: rgb(0, 52, 77);
+}
+#use_guide, #facility_guide {
+   width: 100%;
+   display: none;
+}
+#use_guide_img, #facility_guide_img, #staitonInfo img {
+   display: block;
+   width: 100%;
+   padding: 20px;
+   background-color: rgba(128, 128, 128, 0.3);
+}
+#use_guide_img {
+   margin-bottom: 130px;
+}
+#station_contents input {
+   display: none;
+}
+#input_staitonInfo:checked ~ #staitonInfo, #input_use:checked ~ #use_guide, #input_facility:checked ~ #facility_guide {
+   display: block;
+}
+#input_staitonInfo:checked ~ #use_guide, #input_facility:checked ~ #use_guide, #input_facility:checked ~ #staitonInfo,
+#input_use:checked ~ #facility_guide, #input_use:checked ~ #staitonInfo, #input_staitonInfo:checked ~ #facility_guide {
+   display: none;
+}
+#input_staitonInfo:checked ~ #label_wrap > #label_use, #input_staitonInfo:checked ~ #label_wrap > #label_facility,
+#input_use:checked ~ #label_wrap > #label_staitonInfo, #input_use:checked ~ #label_wrap > #label_facility,
+#input_facility:checked ~ #label_wrap > #label_use, #input_facility:checked ~ #label_wrap > #label_staitonInfo {
+   color: rgba(51, 51, 51, 0.5);
+}
+#input_staitonInfo:checked ~ #label_wrap > #label_staitonInfo, #input_use:checked ~ #label_wrap > #label_use, #input_facility:checked ~ #label_wrap > #label_facility {
+   color: rgb(0, 52, 77);
+}
+#label_wrap {
+   display: flex;
+   width: 100%;
+}
+#label_staitonInfo, #label_use, #label_facility {
+   border: 1px solid rgba(0, 52, 77, 0.5);
+   width: 100%;
+   height: 50px;
+   padding: 10px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+#label_staitonInfo, #label_use {
+   margin-right: 10px;
+}

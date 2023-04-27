@@ -1,0 +1,38 @@
+#content_safety {
+   padding: 30px;
+}
+#content_safety h3 {
+   margin-bottom: 30px;
+   color: rgb(0, 52, 77);
+   font-size: 1.2em;
+}
+#content_safety img[alt="경전철 이미지"] {
+   padding: 10px;
+   border: 1px solid rgba(0, 52, 77, 0.5);
+   width: 300px;
+   float: left;
+}
+#content_safety > p {
+   margin: 20px;
+}
+#content_safety ol {
+   float: left;
+   display: block;
+   width: 550px;
+   margin-left: 30px;
+}
+#content_safety li {
+   list-style: decimal;
+   line-height: 1.2em;
+   margin: 20px;
+}
+#content_safety img[alt="사인 이미지"] {
+   clear: left;
+   width: 700px;
+   display: block;
+   margin: 0 auto;
+}
+.blue_accent {
+   color: green;
+   font-weight: bold;
+}
